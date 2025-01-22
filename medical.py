@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
-api = os.getenv("api")
+# api = os.getenv("api")
+api = st.secrets["api_key"]
 
 # Function to encode the image to base64
 def encode_image(image_path):
