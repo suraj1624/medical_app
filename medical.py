@@ -15,7 +15,7 @@ def encode_image(image_path):
         return base64.b64encode(image_file.read()).decode('utf-8')
 
 # Initialize Groq client
-client = Groq(api_key=api)
+client = Groq(api_key=api_key)
 
 # Define the prompt
 def generate_prompt(user_input):
